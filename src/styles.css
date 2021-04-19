@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, a {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #1e262c;
+}
+
+p {
+    font-size: 1em;
+}
+
+img, figure {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+

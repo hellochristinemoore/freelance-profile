@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+}
+
+.profile {
+    padding: 5em 0;
+}
+
+.profile .content-wrapper {
+    display: flex;
+}
+
+.profile-projects {
+    width: 60%;
+    padding-left: 3em;
+}
+
+
+
+
+
+
