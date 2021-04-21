@@ -8,9 +8,10 @@ import { Profile } from './profile.model'
   styleUrls: ['./profile-info.component.css']
 })
 export class ProfileInfoComponent implements OnInit {
-  profiles: Profile [] = [
+  /* profiles: Profile [] = [
     new Profile('John', 'Doe', 45)
-  ];
+  ]; */
+  profiles : Profile;
 
   constructor() { }
 
