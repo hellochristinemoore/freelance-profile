@@ -2,6 +2,4 @@
 
 import { Profile } from './profile.model';
 
-export const profiles: Profile[] = [
-    { name: 'John', surname: 'Doe', age: 45}
-]
+export const mockProfile: Profile = { name: 'John', surname: 'Doe', age: 45};
