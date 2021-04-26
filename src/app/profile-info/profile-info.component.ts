@@ -12,5 +12,7 @@ export class ProfileInfoComponent implements OnInit {
 
   constructor(private profileService: ProfileService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.profile = this.profileService.getProfile();
+  }
 }
