@@ -1,10 +1,10 @@
 <div class="profile-info">
-    <figure>
-      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="profile">
-    </figure>
-    <div class="information">
-            <p><strong>Name:</strong> {{ profile.name }} </p>
-            <p><strong>Surname:</strong> {{ profile.surname }}</p>
-            <p><strong>Age:</strong> {{ profile.age }} </p>
-    </div>
+  <figure>
+    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="profile" />
+  </figure>
+  <div *ngIf="profile" class="information">
+    <p><strong>Name:</strong> {{ profile.name }}</p>
+    <p><strong>Surname:</strong> {{ profile.surname }}</p>
+    <p><strong>Age:</strong> {{ profile.age }}</p>
+  </div>
 </div>

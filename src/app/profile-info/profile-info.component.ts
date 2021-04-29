@@ -1,18 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../services/profile.service';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Profile } from './profile.model';
 
 @Component({
   selector: 'app-profile-info',
   templateUrl: './profile-info.component.html',
   styleUrls: ['./profile-info.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProfileInfoComponent implements OnInit {
+export class ProfileInfoComponent {
+  @Input()
   profile: Profile;
-
-  constructor(private profileService: ProfileService) {}
-
-  ngOnInit() {
-    this.profile = this.profileService.getProfile();
-  }
 }
