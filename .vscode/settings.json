@@ -1,5 +1,0 @@
-{
-    "prettier.enableDebugLogs": true,
-    "prettier.withNodeModules": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
