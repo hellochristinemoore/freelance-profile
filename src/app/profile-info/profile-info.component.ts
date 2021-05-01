@@ -7,6 +7,8 @@ import { Profile } from './profile.model';
   styleUrls: ['./profile-info.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
+// Use @Input() to configure the parent (app.component) and child (profile-info.component)
 export class ProfileInfoComponent {
   @Input()
   profile: Profile;
