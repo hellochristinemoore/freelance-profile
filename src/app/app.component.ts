@@ -1,10 +1,10 @@
-import { Component, Injectable } from '@angular/core';
+import { Component, Injectable, Input } from '@angular/core';
+//import { projectRecords } from './database/project';
 import { Profile } from './profile-info/profile.model';
 import { ProfileService } from './services/profile.service';
-
-import { Project } from './types/project';
 import { ProjectService } from './services/project.service';
 
+import { Project } from './types/project';
 
 @Component({
   selector: 'app-root',
@@ -15,32 +15,23 @@ import { ProjectService } from './services/project.service';
 export class AppComponent {
   title = 'freelance-profile';
   profile : Profile;
-  projects : Project;
-
-  //Dependency Inject ProfileService below 
-  constructor(private profileService: ProfileService) {}
+  projects: Project[];
+ 
+  
+  //Dependency Inject ProfileService & ProjectService below 
+  constructor(private profileService: ProfileService, private projectService: ProjectService ) {}
 
   getProfileService(): void {
     this.profile = this.profileService.getProfile();
   }
 
-  ngOnInit() {
-    this.getProfileService();
-  }
-}
-
-@Injectable()
-  export class ProfileProjectComponent {
-  projects: Project [];
-
-  //Dependency Inject ProjectService below
-  constructor(private projectService: ProjectService) {}
-
-  getprojectService(): void {
+  getProjectService(): void {
     this.projects = this.projectService.getProject();
   }
 
   ngOnInit() {
-    this.getprojectService();
+    this.getProfileService(), this.getProjectService();
   }
 }
+
+
