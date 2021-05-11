@@ -7,15 +7,10 @@
         <app-profile-info [profile]="profile"></app-profile-info>
         <div class="profile-projects">
           <h2>Projects Executed</h2>
-          <!-- <app-profile-project></app-profile-project> -->
-          <div 
-            class="project"
-            *ngFor="let project of projects">
-                <h3>{{ project.name }}</h3>
-                    <p><strong>Project Name:</strong> {{ project.name }}</p>
-                    <p><strong>Languages:</strong> {{ project.language }}</p>
-                    <p><strong>Project ZAR value:</strong> {{ project.value }}</p>
-          </div>
+          <app-project
+            *ngFor="let project of projects",
+            [projects]="project">
+          </app-project>
         </div>
       </div>
     </section>

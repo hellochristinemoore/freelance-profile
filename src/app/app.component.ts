@@ -1,10 +1,9 @@
-import { Component, Injectable, Input } from '@angular/core';
-//import { projectRecords } from './database/project';
+import { Component } from '@angular/core';
 import { Profile } from './profile-info/profile.model';
 import { ProfileService } from './services/profile.service';
+import { Project } from './types/project';
 import { ProjectService } from './services/project.service';
 
-import { Project } from './types/project';
 
 @Component({
   selector: 'app-root',

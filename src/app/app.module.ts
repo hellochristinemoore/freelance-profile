@@ -4,13 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { HeaderComponent } from './header/header.component';
-//import { ProjectService } from './services/project.service';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileInfoComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule
