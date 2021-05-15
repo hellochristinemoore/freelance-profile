@@ -1,4 +1,5 @@
-export class Project {
-    constructor(public name: string, public language: string, public value: number) {
-    }
+export interface Project {
+  name: string;
+  language: string;
+  value: number;
 }

@@ -3,10 +3,10 @@ import { projectRecords } from '../database/project';
 import { Project } from '../types/project';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectService {
-  getProject(): Project[] {
+  getProjects(): Project[] {
     return projectRecords;
   }
 }

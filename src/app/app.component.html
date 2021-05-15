@@ -7,13 +7,11 @@
         <app-profile-info [profile]="profile"></app-profile-info>
         <div class="profile-projects">
           <h2>Projects Executed</h2>
-          <app-project
-            *ngFor="let project of projects"
-            [project]="project">
-          </app-project>
+          <ng-container *ngFor="let project of projects">
+            <app-project [project]="project"> </app-project>
+          </ng-container>
         </div>
       </div>
     </section>
-
   </main>
 </body>

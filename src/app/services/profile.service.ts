@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { profileRecord } from '../database/profile';
-import { Profile } from '../profile-info/profile.model';
+import { Profile } from '../types/profile.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProfileService {
   getProfile(): Profile {

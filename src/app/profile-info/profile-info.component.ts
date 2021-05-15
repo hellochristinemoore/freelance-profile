@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Profile } from './profile.model';
+import { Profile } from '../types/profile.interface';
 
 @Component({
   selector: 'app-profile-info',

@@ -10,5 +10,5 @@ import { Project } from '../types/project';
 // @Input() allows a parent component (app.component) to update data in the child component (project.component)
 export class ProjectComponent {
   @Input()
-  project: Project[];
+  project: Project;
 }

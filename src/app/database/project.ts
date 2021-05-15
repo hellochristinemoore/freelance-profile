@@ -1,7 +1,19 @@
-import { Project } from "../types/project";
+import { Project } from '../types/project';
 
 export const projectRecords: Project[] = [
-      new Project('Shoprite Knect', 'Angular & SQL', 4000000),
-      new Project('Spar Rewards', 'Vue, React, SQL', 5250000),
-      new Project('eBucks PaySmart', 'Python', 325000)
-    ] 
+  {
+    name: 'Shoprite Knect',
+    language: 'Angular & SQL',
+    value: 4000000,
+  },
+  {
+    name: 'Spar Rewards',
+    language: 'Vue, React, SQL',
+    value: 5250000,
+  },
+  {
+    name: 'eBucks PaySmart',
+    language: 'Python',
+    value: 325000,
+  },
+];
